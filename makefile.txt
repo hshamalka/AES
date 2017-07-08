@@ -1,0 +1,11 @@
+CC = gcc
+CFLAGS = -g -Wall
+
+OUT_NAME = aes
+
+all: $(OUT_NAME)
+$(OUT_NAME): $(OUT_NAME).c
+	$(CC) -o $(OUT_NAME) $(CFLAGS) $(OUT_NAME).c
+	
+clean:
+	rm $(OUT_NAME) *.o
